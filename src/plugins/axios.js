@@ -10,14 +10,13 @@ import qs from "qs";
 // axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 let config = {
-    baseURL: process.env.API_URL,
+    baseURL: "http://127.0.0.1:8081/",
     timeout: 60 * 1000,
-    withCredentials: true,
+    withCredentials: false,
     headers: {
       "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
 };
-
 const _axios = axios.create(config);
 
 _axios.interceptors.request.use(

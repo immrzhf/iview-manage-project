@@ -1,6 +1,7 @@
 export const apiList = {
 
     common: {
-       login: "/login/login"
+       login: "/login/login",
+       getFunction: "/login/getFunction"
     }
 }
